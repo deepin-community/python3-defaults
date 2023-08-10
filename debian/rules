@@ -21,7 +21,7 @@ distribution := $(shell dpkg-vendor --query Vendor)
 distrelease  := $(shell lsb_release -cs)
 
 # requiered python3.x version
-UPSTRVER   := 3.10.4-1~
+UPSTRVER   := 3.10.5~
 
 # required versions of python3-lib2to3 and python3-distutils
 STDLIBVER   := 3.9.10-2~

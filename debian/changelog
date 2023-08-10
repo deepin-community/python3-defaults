@@ -1,3 +1,10 @@
+python3-defaults (3.10.5-1deepin) unstable; urgency=medium
+
+  * Default to python 3.10
+  * Bump version to 3.10.5
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 10 Aug 2023 10:18:22 +0800
+
 python3-defaults (3.10.4-1) unstable; urgency=medium
 
   * Default to python 3.10.

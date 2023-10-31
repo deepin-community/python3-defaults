@@ -201,6 +201,16 @@ def installed_versions(version_only=False):
         return versions
 
 
+def minmax_supported_version(minmax, version_only=False):
+    supported_versions_list = supported_versions(True)
+    version = minmax(version_to_tuple(ver) for ver in supported_versions_list)
+    version_str = '%d.%d' % version
+    if version_only:
+        return version_str
+    else:
+        return 'python' + version_str
+
+
 class ControlFileValueError(ValueError):
     pass
 
@@ -289,6 +299,12 @@ def main():
     parser.add_option('-i', '--installed',
                       help='print the installed supported python3 versions',
                       action='store_true', dest='installed')
+    parser.add_option('--min-supported',
+                      help='print the minimum supported python3 version',
+                      action='store_true', dest='minsupported')
+    parser.add_option('--max-supported',
+                      help='print the maximum supported python3 version',
+                      action='store_true', dest='maxsupported')
     parser.add_option('-v', '--version',
                       help='print just the version number(s)',
                       default=False, action='store_true', dest='version_only')
@@ -305,6 +321,10 @@ def main():
         print(' '.join(supported_versions(opts.version_only)))
     elif opts.installed and len(args) == 0:
         print(' '.join(installed_versions(opts.version_only)))
+    elif opts.minsupported and len(args) == 0:
+        print(minmax_supported_version(min, opts.version_only))
+    elif opts.maxsupported and len(args) == 0:
+        print(minmax_supported_version(max, opts.version_only))
     elif opts.requested and len(args) <= 1:
         if len(args) == 0:
             versions = 'debian/control'

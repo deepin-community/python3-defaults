@@ -188,8 +188,9 @@ Depends: python3 (= ${binary:Version}),
  ${misc:Depends},
  python3-distutils (>= @STDLIBVER@),
  python3.10,
+ python3.11,
 Description: package depending on all supported Python 3 runtime versions
- The package currently depends on python3.10, in the future,
+ The package currently depends on python3.10 and python3.11, in the future,
  dependencies on jython (Python for a JVM) and ironpython (Python for Mono)
  may be added.
  .
@@ -205,8 +206,9 @@ Depends: python3 (= ${binary:Version}),
  python3-dev (= ${binary:Version}),
  ${misc:Depends},
  python3.10-dev,
+ python3.11-dev,
 Description: package depending on all supported Python 3 development packages
- The package currently depends on python3.10-dev, in the
+ The package currently depends on python3.10-dev python3.11-dev, in the
  future, dependencies on jython (Python for a JVM) and ironpython (Python
  for Mono) may be added.
  .
@@ -224,8 +226,9 @@ Depends: python3 (= ${binary:Version}),
  python3-dbg (= ${binary:Version}),
  ${misc:Depends},
  python3.10-dbg,
+ python3.11-dbg,
 Description: package depending on all supported Python 3 debugging packages
- The package currently depends on python3.10-dbg, in the
+ The package currently depends on python3.10-dbg and python3.11-dbg, in the
  future, dependencies on jython (Python for a JVM) and ironpython (Python
  for Mono) may be added.
  .
@@ -239,8 +242,9 @@ Section: libdevel
 Depends: libpython3-dev (= ${binary:Version}),
  ${misc:Depends},
  libpython3.10-dev,
+ libpython3.11-dev,
 Description: package depending on all supported Python 3 development packages
- The package currently depends on libpython3.10-dev, in the
+ The package currently depends on libpython3.10-dev and libpython3.11-dev, in the
  future, dependencies on jython (Python for a JVM) and ironpython (Python
  for Mono) may be added.
  .
@@ -255,8 +259,9 @@ Section: debug
 Depends: libpython3-dbg (= ${binary:Version}),
  ${misc:Depends},
  libpython3.10-dbg,
+ libpython3.11-dbg,
 Description: package depending on all supported Python 3 debugging packages
- The package currently depends on libpython3.10-dbg, in the
+ The package currently depends on libpython3.10-dbg and libpython3.11-dbg, in the
  future, dependencies on jython (Python for a JVM) and ironpython (Python
  for Mono) may be added.
  .

@@ -1,3 +1,34 @@
+python3-defaults (3.11.4-5) unstable; urgency=medium
+
+  * Source-only upload.
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 05 Jul 2023 11:27:27 +0200
+
+python3-defaults (3.11.4-4) unstable; urgency=high
+
+  * Fix importlib.util import (-3 regression, closes: 1040316)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 04 Jul 2023 19:49:27 +0200
+
+python3-defaults (3.11.4-3) unstable; urgency=medium
+
+  * debpython/interpreter.py: Stop using the imp module, removed in 3.12.
+    Closes: #1040261.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 04 Jul 2023 12:08:14 +0200
+
+python3-defaults (3.11.4-2) experimental; urgency=medium
+
+  * Add new binary package: python3-all-venv. Closes: #1039988.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 01 Jul 2023 09:38:35 -0400
+
+python3-defaults (3.11.4-1) unstable; urgency=medium
+
+  * Bump version to 3.11.4.
+
+ -- Matthias Klose <doko@debian.org>  Sun, 25 Jun 2023 14:41:31 +0200
+
 python3-defaults (3.11.2-1) unstable; urgency=high
 
   * Bump version to 3.11.2. Closes: #1031336.

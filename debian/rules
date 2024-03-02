@@ -63,7 +63,8 @@ stamp-doc-policy:
 	$(MAKE) -C policy singlehtml SPHINXOPTS='-D html_theme_options.nosidebar=true'
 	( \
 	    echo 'The HTML version of the Debian Python Policy can be found in the python3-dev package'; \
-	    html2text -utf8 -style pretty policy/_build/singlehtml/index.html; \
+	    html2text -utf8 -rcfile /usr/share/doc/html2text/examples/pretty.style \
+	    policy/_build/singlehtml/index.html; \
 	) > policy/_build/python-policy.txt
 	rm -rf policy/_build/singlehtml
 

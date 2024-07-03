@@ -1,6 +1,14 @@
+python3-defaults (3.12.1-1) experimental; urgency=medium
+
+  * Default to Python 3.12.
+  * Bump hardcoded Provides: python3-supported-max to 3.12.
+  * Stop building the transitional idle3 package. Closes: #1032789.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 20 Jan 2024 09:02:48 +0100
+
 python3-defaults (3.11.6-1) unstable; urgency=medium
 
-  * Add 3.12 as a supported Python3 version 
+  * Add 3.12 as a supported Python3 version.
   * Bump version to 3.11.6.
 
  -- Matthias Klose <doko@debian.org>  Sun, 03 Dec 2023 10:21:41 +0100

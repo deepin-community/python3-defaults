@@ -1,6 +1,6 @@
 [DEFAULT]
 # the default python3 version
-default-version = python3.11
+default-version = python3.12
 
 # all supported python3 versions
 supported-versions = python3.11, python3.12
